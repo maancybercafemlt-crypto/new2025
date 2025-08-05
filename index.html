@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cyber Cafe Help Line</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dark-theme">
+    <header>
+        <h1>Cyber Cafe Help Line</h1>
+        <div class="contact-info">
+            <p>📞 +91-7814903334 | 📧 jaidiyakingak47@gmail.com</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="welcome">
+            <h2>Welcome to Cyber Cafe Help Line</h2>
+            <p>Your one-stop solution for all cyber services.</p>
+        </section>
+
+        <section class="rate-list">
+            <h3>Service Rate List</h3>
+            <div id="rate-list">
+                <ul>
+                    <li>Aadhar Print – ₹30</li>
+                    <li>Pan Card Apply – ₹110</li>
+                    <li>Passport Size Photo – ₹20</li>
+                </ul>
+            </div>
+            <div class="admin-actions" style="display:none;" id="rate-edit-box">
+                <textarea id="rateEditor" rows="6" cols="40"></textarea><br />
+                <button onclick="saveRateList()">Save Rates</button>
+            </div>
+        </section>
+
+        <section class="chat-box">
+            <h3>Chat with Admin</h3>
+            <div class="chat-window" id="chatWindow">
+                <p><i>Only Admin can see and reply to your message.</i></p>
+            </div>
+            <input type="text" id="chatInput" placeholder="Write your message..." />
+            <button onclick="sendMessage()">Send</button>
+        </section>
+    </main>
+
+    <footer>
+        <button onclick="location.href='admin.html'">Admin Login</button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
